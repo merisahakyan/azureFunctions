@@ -10,6 +10,7 @@ namespace MyFunctionsApp.Services
 {
     public class BlobService : IBlobService
     {
+        public BlobService() { }
         public async Task UploadImageAsync(string fileName, string imageUrl)
         {
             var container = "images";

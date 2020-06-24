@@ -9,6 +9,7 @@ namespace MyFunctionsApp.Services
 {
     public class SqlService : ISqlService
     {
+        public SqlService() { }
         public async Task<int> GetByUrlCountAsync(string url)
         {
             var str = Environment.GetEnvironmentVariable("sqldb_connection");
